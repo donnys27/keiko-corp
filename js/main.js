@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//Navigation menu scrollTo
-	$('header nav ul li a').click(function(event){
+	$('.navLink').click(function(event){
 		event.preventDefault();
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 
 	$('.app_link').click(function(e){
-		event.preventDefault();
+		e.preventDefault();
 		$(window).scrollTo({top:$("#hero").position().top, left:'0px'}, 1000);		
 	});
 
